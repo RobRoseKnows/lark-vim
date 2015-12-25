@@ -1,12 +1,7 @@
-Vim syntax coloring for ANTLR files.
-Taken from
-[ANTLR Share List](http://www.antlr.org/share/list)
+Vim, syntax highlighting for ANTLR versions 3 and 4.
 
-copy the file into ~/.vim/syntax
-and add
-    au BufRead,BufNewFile *.g set syntax=antlr3
-to your .vimrc (or .vimrc.local)
-
-Alternatively you can checkout [my fork of vim
-plugins](https://github.com/rollxx/janus), which already
-includes this syntax plugin.
+If you are using [VundleVim/Vundle.vim](https://github.com/VundleVim/Vundle.vim), add `Plugin 'dylon/vim-antlr'` to your `.vimrc` and install it via `:PluginInstall`.  Otherwise, copy the files `antlr3.vim` and `antlr4.vim` into ~/.vim/syntax, and add the following to your `.vimrc`:
+```vim
+au BufRead,BufNewFile *.g set syntax=antlr3
+au BufRead,BufNewFile *.g4 set syntax=antlr4
+```
